@@ -1,0 +1,82 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="footer__sections">
+        <section>
+            <h4>Soporte</h4>
+            <ul>
+                <li><a href="#">online</a></li>
+                <li><a href="#">contacto</a></li>
+                <li><a href="#">emails</a></li>
+                <li><a href="">numeros</a></li>
+                <li><a href="">direccion</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Blog</h4>
+            <ul>
+                <li><a href="">Telecomunicaciones</a></li>
+                <li><a href="">Comunicacion satelital</a></li>
+                <li><a href="">Tecnologia</a></li>
+                <li><a href="">Estudio</a></li>
+                <li><a href="">Investigacion</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Links</h4>
+            <ul>
+                <li><a href="">INICIO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">SOBRE MI</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </section>
+    </div>
+	<p class="footer__copyright">
+			<small>&copy; {today.getFullYear()} Copyright © Uneg, Telecomunicaciones. All rights reserved.</small>
+	</p>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 1em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__copyright{
+		text-align: center;
+	}
+
+	.footer__sections{
+		display:flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.footer__sections section{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.social-links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+
+</style>

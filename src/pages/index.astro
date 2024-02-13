@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION , TOPIC} from '../consts';
+
+const heroImage="/img/satelite.jpg"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="hero-image">
+				{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+			</div>
+			<h2 style="color:black" >🧑‍🚀 Hola, Bienvenido preparate para aprender todo sobre {TOPIC}</h2>
+			<p>
+				<strong>El Blog de las Comunicaciones Satelitales</strong> es tu fuente de información sobre la tecnología que nos conecta a través del espacio. Explora las últimas noticias, tendencias e innovaciones en el mundo de las comunicaciones satelitales, y descubre cómo esta tecnología está transformando la forma en que nos comunicamos, trabajamos y vivimos.
+			  </p>
+			  
+			  <ul>
+				<li>Artículos informativos sobre los diferentes tipos de comunicaciones satelitales.</li>
+				<li>Análisis de las últimas tendencias y desarrollos en la industria.</li>
+				<li>Entrevistas con expertos en el campo.</li>
+				<li>Casos de éxito de empresas y organizaciones que utilizan las comunicaciones satelitales.</li>
+				<li>Recursos útiles para aprender más sobre la tecnología.</li>
+			  </ul>
+			  
+			  <p>
+				Tanto si eres un profesional de la industria como si simplemente te interesa saber más sobre las comunicaciones satelitales, este blog es para ti.
+			  </p>
+			  
+			  <h2>Síguenos en nuestras redes sociales:</h2>
+			  
+			  <ul>
+				<li><a href="https://www.facebook.com/tupaginadefacebook">Facebook</a></li>
+				<li><a href="https://twitter.com/tucuentadetwitter">Twitter</a></li>
+				<li><a href="https://www.linkedin.com/in/tuperfildelinkedin">LinkedIn</a></li>
+			  </ul>
+			  
+			  <h2>Suscríbete a nuestro boletín:</h2>
+			  
+			  <p>
+				Recibe notificaciones sobre nuevas publicaciones en tu correo electrónico:
+			  </p>
+			  
+			  <form action="https://tuformulariodesuscripcion.com">
+				<input type="email" name="email" placeholder="Tu correo electrónico">
+				<button type="submit">Suscribirse</button>
+			  </form>
+			  
+			  <p>
+				¡Esperamos que disfrutes de tu viaje por el mundo de las comunicaciones satelitales!
+			  </p>
+		</main>
+		<Footer />
+	</body>
+</html>
